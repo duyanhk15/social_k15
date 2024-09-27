@@ -11,14 +11,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 02:19+0000\n"
-"PO-Revision-Date: 2017-12-01 02:19+0000\n"
-"Last-Translator: Paolo Valier <paolo.valier@hotmail.it>, 2017\n"
+"PO-Revision-Date: 2024-01-17 10:35+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_tracking_email__state
@@ -104,13 +105,6 @@ msgid "Clicked URL"
 msgstr ""
 
 #. module: mail_tracking
-#. openerp-web
-#: code:addons/mail_tracking/static/src/js/failed_message/discuss.js:0
-#, python-format
-msgid "Congratulations, your failed mailbox is empty"
-msgstr ""
-
-#. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_res_partner
 msgid "Contact"
 msgstr ""
@@ -167,20 +161,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__display_name
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__display_name
 msgid "Display Name"
-msgstr "Nome da visualizzare"
-
-#. module: mail_tracking
-#. openerp-web
-#: code:addons/mail_tracking/static/src/js/failed_message/discuss.js:0
-#, python-format
-msgid "Do you really want to mark as reviewed all the failed messages (%d)?"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_id
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_email_search
 msgid "Email"
-msgstr "Email"
+msgstr "E-mail"
 
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_alias
@@ -256,7 +243,6 @@ msgstr ""
 #. module: mail_tracking
 #. openerp-web
 #: code:addons/mail_tracking/static/src/js/discuss/discuss.esm.js:0
-#: code:addons/mail_tracking/static/src/js/failed_message/discuss.js:0
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_email_search
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
 #, python-format
@@ -264,7 +250,18 @@ msgid "Failed"
 msgstr "Fallita"
 
 #. module: mail_tracking
+#: model:ir.model.fields,field_description:mail_tracking.field_account_account__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_account_template__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_analytic_account__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_bank_statement__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_bank_statement_line__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_journal__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_move__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_payment__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_account_reconcile_model__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_calendar_event__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_event_event__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_event_registration__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_blacklist__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_channel__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_thread__failed_message_ids
@@ -274,6 +271,8 @@ msgstr "Fallita"
 #: model:ir.model.fields,field_description:mail_tracking.field_mailing_contact__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_mailing_mailing__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_phone_blacklist__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_product_product__failed_message_ids
+#: model:ir.model.fields,field_description:mail_tracking.field_product_template__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_res_partner__failed_message_ids
 #: model:ir.model.fields,field_description:mail_tracking.field_res_users__failed_message_ids
 #, fuzzy
@@ -283,9 +282,9 @@ msgstr "Messaggio"
 #. module: mail_tracking
 #. openerp-web
 #: code:addons/mail_tracking/static/src/xml/failed_message/thread.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Failed Recipients:"
-msgstr "Destinatario"
+msgstr "Destinatario:"
 
 #. module: mail_tracking
 #. openerp-web
@@ -418,6 +417,7 @@ msgstr ""
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_message
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_message_id
+#: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__message_id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__tracking_email_id
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
 msgid "Message"
@@ -464,7 +464,7 @@ msgstr ""
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_mail
 msgid "Outgoing Mails"
-msgstr "Mail in Uscita"
+msgstr "E-mail in uscita"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__partner_id
@@ -498,6 +498,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__recipient_address
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__recipient_address
 msgid "Recipient email address"
+msgstr ""
+
+#. module: mail_tracking
+#: code:addons/mail_tracking/models/mail_tracking_email.py:0
+#, python-format
+msgid "Records:"
 msgstr ""
 
 #. module: mail_tracking
@@ -544,7 +550,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
 #, python-format
 msgid "Sent"
-msgstr "Invia"
+msgstr "Inviato"
 
 #. module: mail_tracking
 #. openerp-web
@@ -607,6 +613,16 @@ msgid "The partner doesn't have a defined email"
 msgstr ""
 
 #. module: mail_tracking
+#: code:addons/mail_tracking/models/mail_tracking_email.py:0
+#, python-format
+msgid ""
+"The requested operation cannot be completed due to security restrictions. "
+"Please contact your system administrator.\n"
+"\n"
+"(Document type: %(desc)s, Operation: %(operation)s)"
+msgstr ""
+
+#. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__time
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__time
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_email_search
@@ -616,9 +632,8 @@ msgstr ""
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_message__email_to
-#, fuzzy
 msgid "To"
-msgstr "A:"
+msgstr "A"
 
 #. module: mail_tracking
 #. openerp-web
@@ -688,7 +703,7 @@ msgstr ""
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__ip
 msgid "User IP"
-msgstr "IP Utente"
+msgstr "IP utente"
 
 #. module: mail_tracking
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_email_form
@@ -711,6 +726,12 @@ msgstr ""
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__user_country_id
 msgid "User country"
+msgstr ""
+
+#. module: mail_tracking
+#: code:addons/mail_tracking/models/mail_tracking_email.py:0
+#, python-format
+msgid "User:"
 msgstr ""
 
 #. module: mail_tracking

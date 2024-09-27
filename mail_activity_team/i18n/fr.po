@@ -32,6 +32,8 @@ msgid "Activity Mixin"
 msgstr "Combinaison d'activités"
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_ir_actions_server__activity_team_id
+#: model:ir.model.fields,field_description:mail_activity_team.field_ir_cron__activity_team_id
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
 msgid "Activity Team"
 msgstr "Equipe d'activité"
@@ -42,6 +44,11 @@ msgstr "Equipe d'activité"
 #: model:ir.ui.menu,name:mail_activity_team.menu_mail_activity_team
 msgid "Activity Teams"
 msgstr "Equipes d'activité"
+
+#. module: mail_activity_team
+#: model:ir.model,name:mail_activity_team.model_mail_activity_type
+msgid "Activity Type"
+msgstr ""
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
@@ -62,6 +69,11 @@ msgstr "Créé par"
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__create_date
 msgid "Created on"
 msgstr "Créé le"
+
+#. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_type__default_team_id
+msgid "Default Team"
+msgstr ""
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__display_name
@@ -121,6 +133,11 @@ msgid "Name"
 msgstr ""
 
 #. module: mail_activity_team
+#: model:ir.model,name:mail_activity_team.model_ir_actions_server
+msgid "Server Action"
+msgstr ""
+
+#. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_id
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_search
 msgid "Team"
@@ -144,6 +161,11 @@ msgid "Team Members"
 msgstr ""
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_user_id
+msgid "Team user"
+msgstr ""
+
+#. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_kanban
 msgid "Team:"
 msgstr ""
@@ -161,13 +183,26 @@ msgid "Used models"
 msgstr ""
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__user_id
+msgid "User"
+msgstr ""
+
+#. module: mail_activity_team
 #: model:ir.model,name:mail_activity_team.model_res_users
 msgid "Users"
 msgstr ""
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_bank_statement_line__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_journal__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_move__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_payment__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_event_event__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_event_registration__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_mixin__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_mailing_mailing__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_product_product__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_product_template__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_res_partner__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_res_users__activity_team_user_ids
 msgid "test field"

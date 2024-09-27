@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 18:36+0000\n"
-"Last-Translator: Alessandro Fiorino <alessandro.fiorino@digitaldomus.it>\n"
+"PO-Revision-Date: 2023-12-20 14:34+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__active
@@ -32,6 +32,8 @@ msgid "Activity Mixin"
 msgstr ""
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_ir_actions_server__activity_team_id
+#: model:ir.model.fields,field_description:mail_activity_team.field_ir_cron__activity_team_id
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
 msgid "Activity Team"
 msgstr "Team Attività"
@@ -42,6 +44,11 @@ msgstr "Team Attività"
 #: model:ir.ui.menu,name:mail_activity_team.menu_mail_activity_team
 msgid "Activity Teams"
 msgstr "Team Attività"
+
+#. module: mail_activity_team
+#: model:ir.model,name:mail_activity_team.model_mail_activity_type
+msgid "Activity Type"
+msgstr ""
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
@@ -64,9 +71,14 @@ msgid "Created on"
 msgstr "Creato il"
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_type__default_team_id
+msgid "Default Team"
+msgstr ""
+
+#. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__display_name
 msgid "Display Name"
-msgstr "Nome Visualizzato"
+msgstr "Nome visualizzato"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__id
@@ -81,12 +93,12 @@ msgstr "Ultima Modifica il"
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__write_uid
 msgid "Last Updated by"
-msgstr "Ultima Modifica di"
+msgstr "Ultimo aggiornamento di"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__write_date
 msgid "Last Updated on"
-msgstr "Ultima Modifica il"
+msgstr "Ultimo aggiornamento il"
 
 #. module: mail_activity_team
 #: model:ir.model,name:mail_activity_team.model_mail_activity_team
@@ -113,12 +125,17 @@ msgstr ""
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_search
 msgid "My Team Activities"
-msgstr "Attività del mio Team"
+msgstr "Attività del mio team"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__name
 msgid "Name"
 msgstr "Nome"
+
+#. module: mail_activity_team
+#: model:ir.model,name:mail_activity_team.model_ir_actions_server
+msgid "Server Action"
+msgstr ""
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_id
@@ -136,12 +153,17 @@ msgstr ""
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__user_id
 msgid "Team Leader"
-msgstr "Capo Team"
+msgstr "Team leader"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__member_ids
 msgid "Team Members"
 msgstr "Membri Team"
+
+#. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_user_id
+msgid "Team user"
+msgstr ""
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_kanban
@@ -161,13 +183,26 @@ msgid "Used models"
 msgstr "Modelli usati"
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__user_id
+msgid "User"
+msgstr ""
+
+#. module: mail_activity_team
 #: model:ir.model,name:mail_activity_team.model_res_users
 msgid "Users"
 msgstr "Utenti"
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_bank_statement_line__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_journal__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_move__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_account_payment__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_event_event__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_event_registration__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_mixin__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_mailing_mailing__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_product_product__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_product_template__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_res_partner__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_res_users__activity_team_user_ids
 msgid "test field"
